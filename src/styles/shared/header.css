@@ -13,13 +13,27 @@ header img {
 
 nav {
 	display: flex;
+	align-items: center;
 }
 
 nav a {
-	padding: 20px 10px;
+	margin: 30px 10px;
+	padding: 10px 20px;
+	text-align: center;
 	font-size: 1.5em;
 	color: var(--text-on-light);
 	font-family: var(--heading-font);
+	border-radius: 1rem;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav a:focus {
+	background-color: var(--text-on-light);
+	color: white;
+	text-decoration: none;
 }
 
 h1 {
@@ -29,6 +43,10 @@ h1 {
 .hamburger {
 	color: var(--text-on-light);
 	cursor: pointer;
+}
+
+header .hamburger {
+	/* Specifically putting this in a more "specific" qselector so that the .fa class stylings from FontAwesome don't override it sometimes */
 	display: none;
 }
 
