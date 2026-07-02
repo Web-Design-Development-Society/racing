@@ -28,6 +28,11 @@
 	overflow: hidden;
 }
 
+.faq-detail a {
+	padding: 0;
+	text-decoration: underline;
+}
+
 .faq-detail summary {
 	display: flex;
 	padding: calc(0.25rem * 4);
