@@ -16,6 +16,7 @@ footer {
 }
 
 .social a {
+	box-sizing: border-box;
 	width: 46px;
 	height: 46px;
 	display: inline-flex;
