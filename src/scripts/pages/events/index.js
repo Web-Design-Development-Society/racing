@@ -1,3 +1,11 @@
+import {SIGNUP_URL} from '../../constants.js'; 
+// use constants
+let signups = document.getElementsByClassName("signup-link");  
+// fill page links
+for (let i=0; i<signups.length; i++) {
+	signups[i].setAttribute("href", SIGNUP_URL);	
+}; // maybe move this to run on every page — just make sure the links have the right class if any new ones are made. 
+
 // import carousel data
 //import data from "./events_info.json" assert {type: 'json'};
 var slide_data = [];

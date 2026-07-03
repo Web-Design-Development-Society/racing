@@ -1,4 +1,5 @@
 import { isDevelopment } from '../utils/index.js';
+import { SIGNUP_URL } from '../constants.js';
 
 const hrefExt = isDevelopment() ? '.html' : '';
 
@@ -9,7 +10,7 @@ const navLinks = [
 	{ href: 'gallery' + hrefExt, text: 'Gallery' },
 	{ href: 'faq' + hrefExt, text: 'FAQ' },
 	{
-		href: 'https://runsignup.com/Race/ID/Rexburg/UndergradSpring2026?utm_source=platform_find_a_race&utm_medium=referral',
+		href: SIGNUP_URL,
 		text: 'Sign Up',
 		isExternal: true,
 	},
