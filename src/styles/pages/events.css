@@ -128,23 +128,24 @@
 }
 
 .next-race {
-	max-width: 600px;
-    margin: 40px auto;
-    text-align: center;
-    padding: 2em;
+	box-sizing: border-box;
+	max-width: min(40rem, 90vw);
+	margin: 2rem auto;
+	text-align: center;
+	padding: 2rem;
 }
 
 .weekly-data h3 a,
 .next-race a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: var(--secondary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background 0.2s;
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px 20px;
+	background-color: var(--secondary-color);
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: bold;
+	transition: background 0.2s;
 }
 
 #weekly-run-wrapper {
@@ -160,7 +161,8 @@
 	width: 100%;
 }
 
-.weekly-run-container, .weekly-data {
+.weekly-run-container,
+.weekly-data {
 	padding: 1em;
 }
 
@@ -189,9 +191,9 @@
 }
 
 .map-iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 318px;
+	width: 100%;
+	max-width: 600px;
+	height: 318px;
 }
 
 @media (min-width: 900px) {
