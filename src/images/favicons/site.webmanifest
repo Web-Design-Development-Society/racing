@@ -1,0 +1,26 @@
+{
+  "$schema": "https://www.schemastore.org/web-manifest.json",
+  "id": "/",
+  "name": "Undergrad",
+  "short_name": "Run",
+  "description": "We run - by students, for students, with students. Join us for weekly runs, monthly activities, and racing events with rewards.",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/images/favicons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#4fb64b",
+  "background_color": "#0696d3",
+  "display": "standalone"
+}
