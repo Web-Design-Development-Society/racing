@@ -86,7 +86,7 @@
 	padding: 20px 0 0;
 }
 
-.about-button .cta-button {
+.cta-button {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
@@ -103,8 +103,7 @@
 		background-color 0.2s ease;
 }
 
-.about-button .cta-button:hover,
-.about-button .cta-button:focus-visible {
+.cta-button:hover, .cta-button:focus-visible {
 	background: #0498d5;
 	transform: translateY(-2px);
 	box-shadow: 0 12px 20px rgba(20, 56, 33, 0.38);
@@ -557,8 +556,8 @@
 	margin: 0;
 }
 
-.banner-btn {
-	background-color: #f3ebd8; /* Matches your site's cream background */
+/* .banner-btn {
+	background-color: #f3ebd8;
 	color: #1f1a0d;
 	padding: 14px 32px;
 	border-radius: 999px;
@@ -570,14 +569,14 @@
 		box-shadow 0.2s ease,
 		background-color 0.2s ease;
 	margin-top: 12px;
-}
+} */
 
-.banner-btn:hover,
+/* .banner-btn:hover,
 .banner-btn:focus-visible {
 	background-color: #ffffff;
 	transform: translateY(-2px);
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
+} */
 /* .slogan {
 	text-align: center;
 	margin-bottom: 20px;
