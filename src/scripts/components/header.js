@@ -1,5 +1,5 @@
 import { isDevelopment } from '../utils/index.js';
-import { SIGNUP_URL } from '../constants.js';
+import { SHOW_VOLUNTEER, SIGNUP_URL, VOLUNTEER_URL } from '../constants.js';
 
 const hrefExt = isDevelopment() ? '.html' : '';
 
@@ -14,11 +14,6 @@ const navLinks = [
 		text: 'Sign Up',
 		isExternal: true,
 	},
-	{
-		href: 'https://runsignup.com/Race/Volunteer/ID/Rexburg/UndergradSpring2026',
-		text: 'Volunteer',
-		isExternal: true,
-	},
 	// {
 	// 	// Might not need
 	// 	href: 'https://runsignup.com/Race/Donate/ID/Rexburg/RexysChristmasBash',
@@ -26,6 +21,14 @@ const navLinks = [
 	// 	isExternal: true,
 	// },
 ];
+
+if (SHOW_VOLUNTEER) {
+	navLinks.push({
+		href: VOLUNTEER_URL,
+		text: 'Volunteer',
+		isExternal: true,
+	});
+}
 
 /** Constructs an `a` nav element piece by piece */
 function navLink({ href, text, isExternal }) {
