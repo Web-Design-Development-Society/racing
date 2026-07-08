@@ -1,3 +1,5 @@
+import { DONATE_URL } from '../../constants.js';
+
 /* --- JavaScript Functionality --- */
 const track = document.querySelector('.carousel-track');
 const slides = document.querySelectorAll('.carousel-slide');
@@ -77,9 +79,14 @@ prevButton.addEventListener('click', () => {
 	startAutoSlide();
 });
 
+function initDonateBtn() {
+	document.querySelector('.donate-btn').href = DONATE_URL;
+}
+
 // --- Initialization ---
 export function initCarousel() {
 	createIndicators();
 	startAutoSlide();
 	updateCarousel(); // Set initial state (position and active dot)
+	initDonateBtn();
 }
